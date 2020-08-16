@@ -1,0 +1,72 @@
+/* LINKS */
+
+a {
+  color: rgb(0, 180, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 230, 0);
+  text-decoration: none;
+}
+
+
+/* GENERAL */
+
+body {
+  background-color: black;
+  color: gainsboro;
+  font-family: 'IBM Plex Mono', 'Fira code', 'Courier New', Courier, monospace;
+  ;
+}
+
+.container {
+  align-content: center;
+  display: flex;
+}
+
+#content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+.emphasis {
+  color: rgb(0, 170, 0)
+}
+
+
+/* NAV BAR */
+
+nav {
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+}
+
+
+/* PROJECT SECTION */
+
+.project-wrapper {
+  background-color: rgb(10, 10, 10);
+  margin: 1%;
+  padding: 1% 2%;
+  visibility: hidden;
+}
+
+.project-wrapper:hover {
+  background-color: rgb(31, 30, 30);
+  border-color: gray;
+}
+
+.project-img-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.project-img {
+  align-self: center;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
