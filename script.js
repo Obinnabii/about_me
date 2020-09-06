@@ -105,7 +105,7 @@ function addToList(text, list) {
  * @param {String} div_id A string that refers to the ID of a project div in the HTML file.
  */
 function addProject(div_id) {
-  document.getElementById(div_id).style.visibility = 'visible';
+  document.getElementById(div_id).style.display = 'initial';
 }
 
 
