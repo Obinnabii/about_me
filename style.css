@@ -1,21 +1,21 @@
 /* LINKS */
 
 a {
-  color: rgb(0, 180, 0);
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(0, 230, 0);
+  color: rgb(101, 100, 100);
   text-decoration: none;
+  font-weight: bolder;
 }
-
 
 /* GENERAL */
 
 body {
-  background-color: black;
-  color: gainsboro;
+  background-color: white;
+  color: black;
   font-family: 'IBM Plex Mono', 'Fira code', 'Courier New', Courier, monospace;
   ;
 }
@@ -32,29 +32,77 @@ body {
 }
 
 .emphasis {
-  color: rgb(0, 170, 0)
+  color: #828588;
+  ;
 }
 
+/* HEADER */
+.h1 {
+  color: gray;
+  font-size: x-large
+}
+
+.h2 {
+  color: gray;
+  font-size: larger;
+}
+
+.h3 {
+  color: gray !important;
+  font-size: large;
+}
+
+.name {
+  color: black;
+  font-weight: bold;
+}
+
+hr {
+  margin-top: 1%;
+
+}
 
 /* NAV BAR */
 
 nav {
-  padding-bottom: 3vh;
-  padding-top: 3vh;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  width: 100vw;
+  background-color: white;
+  z-index: 99999;
 }
 
+.sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
+  background-color: white;
+}
+
+/* ABOUT ME SECTION */
+
+.languages {
+  margin-top: 28%;
+  margin-bottom: 8%;
+}
 
 /* PROJECT SECTION */
 
 .project-wrapper {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(252, 248, 248);
   margin: 1%;
   padding: 1% 2%;
-  visibility: hidden;
+  min-height: 30vh;
+}
+
+.section {
+  background-color: white;
+  min-height: 100vh;
+  padding-top: 8vh;
 }
 
 .project-wrapper:hover {
-  background-color: rgb(31, 30, 30);
+  background-color: rgb(237, 233, 233);
   border-color: gray;
 }
 
@@ -69,4 +117,19 @@ nav {
   display: block;
   margin: auto;
   width: 100%;
+}
+
+/* EXPERIENCE SECTION */
+
+.date {
+  font-style: italic;
+  font-size: small;
+  color: gray;
+}
+
+.position-wrapper {
+  background-color: rgb(253, 251, 251);
+  margin: 1%;
+  padding: 1% 2%;
+  padding-top: 2%;
 }
