@@ -20,7 +20,7 @@
  * @const {String}
  */
 const CONSOLE_ID = "console";
-const CONSOLE_ID2 = "console-2" 
+const CONSOLE_ID2 = "console-2"
 
 /** 
  * List of project_ids 
