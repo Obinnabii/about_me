@@ -20,54 +20,13 @@
  * @const {String}
  */
 const CONSOLE_ID = "console";
+const CONSOLE_ID2 = "console-2"
 
 /** 
  * List of project_ids 
  * @const {!Array<String>}
  */
 const PROJECTS = ['project_0', 'project_1', 'project_2']
-
-/** 
- * The id of the div where comments will be placed
- * @type {String}
- */
-const COMMENTS_ID = "comment-container";
-
-/** 
- * The id of the div where comments will be placed
- * @type {String}
- */
-const WELCOME_ID = "hello-container";
-
-
-// SERVER_FUNCTIONS
-
-/**
- * Get a welcome message from the serverlet and put it in the welcome container.
- */
-async function getWelcomeMessage() {
-  const response = await fetch('/data'); // send a request to data
-  const hello = await response.json(); // parse response
-  document.getElementById(WELCOME_ID).innerText = hello;
-}
-
-/**
- * Get a list of comments  from the servlet.
- */
-async function getCommentsList() {
-  fetch('/data') // look above for simple explanation
-    .then(response => response.json())
-    .then((comments) => {
-      let commentContainer = document.getElementById(COMMENTS_ID);
-      commentContainer.innerHTML = ''; // clear current comments
-      let clen = comments.length;
-      for (i = 0; i < clen; i++) {
-        console.log(comments[i]);
-        addToList(comments[i], commentContainer);
-      }
-    });
-}
-
 
 // HELPER_FUNCTIONS
 
@@ -82,7 +41,7 @@ function typify(div_id) {
   //turn into typewriter object
   return new Typewriter(div, {
     loop: false,
-    delay: 10,
+    delay: 2,
     autoStart: true,
     cursor: '',
     strings: []
@@ -201,19 +160,17 @@ let myConsole = typify(CONSOLE_ID);
 // FUNCTION CALLS
 
 /**print the initial text blurbs */
-myConsole
-  .typeString(headingBlurb)
-  .pauseFor(300)
-  .typeString(aboutMeBlurb)
-  .pauseFor(300)
-  .typeString(languageBlurb)
-  .pauseFor(300)
-  .typeString(projectsBlurb)
-  .pauseFor(300)
-  .callFunction(() => addProject(PROJECTS[0])) //show first project
-  .pauseFor(300)
-  .callFunction(() => addProject(PROJECTS[1])) // show second project
-  .pauseFor(300)
-  .callFunction(() => addProject(PROJECTS[2])); // show third project
-
-// getCommentsList();
+// myConsole
+//   .typeString(headingBlurb)
+//   .pauseFor(300)
+//   .typeString(aboutMeBlurb)
+//   .pauseFor(300)
+//   .typeString(languageBlurb)
+//   .pauseFor(300)
+//   .typeString(projectsBlurb)
+//   .pauseFor(300)
+//   .callFunction(() => addProject(PROJECTS[0])) //show first project
+//   .pauseFor(300)
+//   .callFunction(() => addProject(PROJECTS[1])) // show second project
+//   .pauseFor(300)
+//   .callFunction(() => addProject(PROJECTS[2])); // show third project
