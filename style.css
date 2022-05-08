@@ -20,6 +20,11 @@ body {
   ;
 }
 
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
 .container {
   align-content: center;
   display: flex;
@@ -32,7 +37,7 @@ body {
 }
 
 .emphasis {
-  color: #828588;
+  color: #828588 !important;
   ;
 }
 
@@ -50,6 +55,11 @@ body {
 .h3 {
   color: gray !important;
   font-size: large;
+}
+
+.h4 {
+  color: gray !important;
+  font-size:medium;
 }
 
 .name {
@@ -104,6 +114,7 @@ nav {
 .project-wrapper:hover {
   background-color: rgb(237, 233, 233);
   border-color: gray;
+  min-height: 32vh;
 }
 
 .project-img-wrapper {
