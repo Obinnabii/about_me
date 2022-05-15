@@ -6,7 +6,7 @@ a {
 }
 
 a:hover {
-  color: rgb(101, 100, 100);
+  color: rgb(142, 16, 16) !important;
   text-decoration: none;
   font-weight: bolder;
 }
@@ -112,9 +112,8 @@ nav {
 }
 
 .project-wrapper:hover {
-  background-color: rgb(237, 233, 233);
+  /* background-color: rgb(237, 233, 233); */
   border-color: gray;
-  min-height: 32vh;
 }
 
 .project-img-wrapper {
